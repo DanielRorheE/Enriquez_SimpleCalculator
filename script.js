@@ -45,7 +45,7 @@ function calculate(operation) {
 
         answer = number1 / number2;
         operationLabel = "Divide";
-    } else if (operation === "Modulo") {
+    } else if (operation === "modulo" || operation === "remainder") {
         if (number2 === 0) {
             document.getElementById("result").textContent =
                 "Cannot divide by zero.";
