@@ -6,25 +6,32 @@ body {
     margin: 0;
     min-height: 100vh;
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #eaf2ff, #f7f9fc);
+    background: linear-gradient(135deg, #fff3e0, #ffe0b2 45%, #ffd180);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.calculator-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+}
+
 .calculator {
     width: 380px;
-    background: #ffffff;
+    background: #fffaf3;
     padding: 30px 25px;
-    border-radius: 16px;
-    box-shadow: 0 12px 35px rgba(26, 60, 118, 0.15);
-    border: 1px solid #dfeaf8;
+    border-radius: 18px;
+    box-shadow: 0 14px 32px rgba(191, 94, 0, 0.2);
+    border: 1px solid #f6c98b;
 }
 
 h1 {
     margin: 0 0 20px;
     text-align: center;
-    color: #1f2d3d;
+    color: #8a3d00;
     font-size: 2rem;
 }
 
@@ -32,22 +39,23 @@ label {
     display: block;
     margin: 16px 0 8px;
     font-weight: 700;
-    color: #2d3a4a;
+    color: #7a3f00;
 }
 
 input {
     width: 100%;
     padding: 12px 14px;
     font-size: 16px;
-    border: 1px solid #c9d6ea;
+    border: 1px solid #f0b26a;
     border-radius: 10px;
     outline: none;
+    background: #fff;
     transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 input:focus {
-    border-color: #4a8ef7;
-    box-shadow: 0 0 0 3px rgba(74, 142, 247, 0.12);
+    border-color: #f28c28;
+    box-shadow: 0 0 0 3px rgba(242, 140, 40, 0.15);
 }
 
 .buttons {
@@ -60,9 +68,9 @@ input:focus {
 button {
     padding: 12px 10px;
     font-size: 15px;
-    font-weight: 600;
-    color: white;
-    background: linear-gradient(180deg, #2f80ed, #1f67d1);
+    font-weight: 700;
+    color: #fff;
+    background: linear-gradient(180deg, #ff9f43, #f57c00);
     border: none;
     border-radius: 10px;
     cursor: pointer;
@@ -70,26 +78,35 @@ button {
 }
 
 button:hover {
-    background: linear-gradient(180deg, #2674d9, #1a5bb6);
+    background: linear-gradient(180deg, #f8902a, #df6c00);
     transform: translateY(-1px);
-    box-shadow: 0 6px 16px rgba(31, 103, 209, 0.2);
+    box-shadow: 0 6px 16px rgba(245, 124, 0, 0.25);
 }
 
 #result {
     margin: 22px 0 14px;
     padding: 15px 12px;
     text-align: center;
-    color: #1d2b39;
-    background: #edf3ff;
+    color: #6d3400;
+    background: #ffe7c2;
     border-radius: 10px;
     font-size: 1.2rem;
 }
 
 .clear-button {
     width: 100%;
-    background: linear-gradient(180deg, #ef5a5a, #d93d3d);
+    background: linear-gradient(180deg, #ff7f50, #e85d2f);
 }
 
 .clear-button:hover {
-    background: linear-gradient(180deg, #dc4d4d, #c63131);
+    background: linear-gradient(180deg, #f56d43, #d74b22);
+}
+
+.signature {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #8a3d00;
+    text-align: center;
+    letter-spacing: 0.04em;
 }
