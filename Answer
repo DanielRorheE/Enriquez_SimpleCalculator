@@ -1,0 +1,8 @@
+1. What is the purpose of using document.getElementById() in the calculator?
+It helps JavaScript find something in the calculator. It can find the input boxes and buttons. This lets JavaScript use them.
+
+2. Why do we use Number() before performing the calculation?
+Number() changes the input into a number. This helps JavaScript do the math correctly. Without it, the input may be treated as text.
+
+3. How do HTML, CSS, and JavaScript work together in this activity?
+HTML makes the calculator parts. CSS makes the calculator look nice. JavaScript makes the calculator work.
